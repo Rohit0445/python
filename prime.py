@@ -1,5 +1,5 @@
 a=int(input("enter a number"))
-b=a%2
+b=a%a
 if(b==0):
     print("prime")
 else:
