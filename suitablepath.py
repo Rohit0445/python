@@ -17,7 +17,7 @@ if(num==1):
 
         elif(next==4):
             print("reached") 
-
+ 
 
     elif(next==3):
         next = int(input("enter your next destination form 2 and 4")) 
