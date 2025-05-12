@@ -50,51 +50,51 @@
 
 #-------------------------------------------------------------Q1-ATM ------------------------------------------------------------------------------------
 
-card = input("Enter your card is from which bank").lower()
-balance=10000
+# card = input("Enter your card is from which bank").lower()
+# balance=10000
 
-if(card == "sbi"):
-    password=1234
-    pin = int(input("Enter your pin : "))
+# if(card == "sbi"):
+#     password=1234
+#     pin = int(input("Enter your pin : "))
 
-    if(pin==password):
-        print("choose one of them Withdraw , Deposit , Balance")
-        opption = input("Enter what would you choose : ").lower()
+#     if(pin==password):
+#         print("choose one of them Withdraw , Deposit , Balance")
+#         opption = input("Enter what would you choose : ").lower()
 
-        if(opption=="withdraw"):
-            amount=int(input("Enter withdraw Amount" ))
-            if(amount>0 and amount<=balance):
-                print("withdraw succesfull")
-                balance -= amount
-                print(balance , "Remaining balance")
-            else:
-                print("Not sufficient balance")   
+#         if(opption=="withdraw"):
+#             amount=int(input("Enter withdraw Amount" ))
+#             if(amount>0 and amount<=balance):
+#                 print("withdraw succesfull")
+#                 balance -= amount
+#                 print(balance , "Remaining balance")
+#             else:
+#                 print("Not sufficient balance")   
             
 
-        elif(opption=="deposit"):
+#         elif(opption=="deposit"):
             
-            amount=int(input("Enter  deposit Amount" ))
-            if(amount>0):
-               balance += amount
-               print(balance , "Your balance ")
+#             amount=int(input("Enter  deposit Amount" ))
+#             if(amount>0):
+#                balance += amount
+#                print(balance , "Your balance ")
             
-            else:
-                print("you gave the negative value ")
-                print("your balance is " , balance)
+#             else:
+#                 print("you gave the negative value ")
+#                 print("your balance is " , balance)
             
 
-        elif(opption=="balance"):
-            print(balance)
+#         elif(opption=="balance"):
+#             print(balance)
 
-        else:
-            print("Invalid input")
+#         else:
+#             print("Invalid input")
 
 
-    else:
-        print("Invalid PIN")
+#     else:
+#         print("Invalid PIN")
 
-else:
-    print("INvalid Company Card")
+# else:
+#     print("INvalid Company Card")
 
 
 #------------------------------------------------------- Q2 = email / password ------------------------------------------------------------------
@@ -161,4 +161,52 @@ else:
 #         print("not available")
 
 # else:
-#     print("Not Available")            
+#     print("Not Available")         
+# 
+# 
+# -------------------------------------------Q= electricity billing---------------------------------------------
+
+
+unit = int (input("Enter your electricity consumption UNIT : "))
+
+
+if(unit>0 and unit<=50):
+    unit = unit*5
+    print("your electricity Bill is : ", unit)
+
+elif(unit>50 and unit <=100):
+    unit1 =unit-50
+    unit = unit -unit1
+    unit = unit*5
+    unit1 = unit1*10
+    print("your electricity Bill is : ", unit + unit1)
+
+elif(unit>100 and unit <=200):
+   unit1 =unit-50
+   unit = unit -unit1
+   unit = unit*5
+   unit2 = unit1 - 50
+   unit1 = unit1 - unit2
+   unit1 = unit1*10
+   unit2= unit2*20
+   print(unit,unit1,unit2)
+   print("your electricity Bill is : ", unit+ unit1 + unit2)
+
+elif(unit>200):
+     unit1 =unit-50
+     unit = unit -unit1
+     unit = unit*5
+     unit2 = unit1 - 50
+     unit1 = unit1 - unit2
+     unit1 = unit1*10
+     unit3 = unit2 -100
+     unit2 = unit2 - unit3
+     unit2= unit2*20
+     unit3 = unit3*30
+    
+     print(unit,unit1,unit2,unit3)
+     print("your electricity Bill is : ", unit+ unit1 + unit2+unit3)
+    
+
+else:
+    print( "Invalid Unit entry")
