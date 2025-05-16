@@ -80,14 +80,73 @@
 #----------------------------------------------------------------------------------------------------------------------------------
 #dessanding order 
 
-li = [1,8,6,9,4,3,7,2,5 ]
+# li = [1,8,6,9,4,3,7,2,5 ]
 
-for i in range(len(li)):
+# for i in range(len(li)):
     
-    for j in range(i+1, len(li)):
-        if(li[j] > li[i]):
-            temp = li[i]
-            li[i] = li[j]
-            li[j] = temp    
+#     for j in range(i+1, len(li)):
+#         if(li[j] > li[i]):
+#             temp = li[i]
+#             li[i] = li[j]
+#             li[j] = temp    
 
-print(li)
+# print(li)
+
+#----------------------------------------------------------------------------------------------------------------------------------------------
+#PALINDROME
+
+
+# num =  int(input("enter a number : " ))
+# temp = num
+# rev = 0
+# while(num > 0):
+#     digit = num%10
+#     num = num //10
+#     rev = rev * 10 +  digit
+
+
+# if(digit == temp ):
+#     print("palindrom")
+
+# else:
+#     print("not a palindrome")
+
+
+# num =  (input("enter a number : " ))
+
+# print("palindrome") if num == num[::-1] else print("not a palindrome")
+
+
+num =  (input("enter a number : " ))
+length = len(num)
+num = int(num)
+amstrong = num
+ans = 0
+
+while(num > 0):
+    
+    digit = num%10
+    num = num//10
+    ans += digit**length
+
+
+if (ans == amstrong):
+    print("Amstrong")
+
+else:
+    print(" Not a amstrong")
+    
+
+
+
+    
+
+           
+
+
+
+
+
+
+
+
