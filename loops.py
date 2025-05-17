@@ -117,36 +117,71 @@
 # print("palindrome") if num == num[::-1] else print("not a palindrome")
 
 
-num =  (input("enter a number : " ))
-length = len(num)
-num = int(num)
-amstrong = num
-ans = 0
+# num =  (input("enter a number : " ))
+# length = len(num)
+# num = int(num)
+# amstrong = num
+# ans = 0
 
-while(num > 0):
+# while(num > 0):
     
-    digit = num%10
-    num = num//10
-    ans += digit**length
+#     digit = num%10
+#     num = num//10
+#     ans += digit**length
 
 
-if (ans == amstrong):
-    print("Amstrong")
+# if (ans == amstrong):
+#     print("Amstrong")
 
-else:
-    print(" Not a amstrong")
-    
+# else:
+#     print(" Not a amstrong")
+
+#reverse list -------------------------------------------------------------
+
+# li = [1,2,38,4,51,68,7,18,9 ]
+
+# for i in range(len(li)):
+#     for j in range(i+1, len(li)):
+#         temp = li[i]
+#         li[i] = li[j]
+#         li[j] = temp    
+# print(li)
+
+#or reverse list
+
+# li = [1,2,38,4,51,68,7,18,9 ]
+
+# i =0
+# j = len(li)-1
+
+# while(i<j):
+#     temp = li[i]
+#     li[i] = li[j]
+#     li[j] = temp
+#     i+=1
+#     j-=1
+
+# print(li)
+
+#PRIME NUMBER ---------------------------------------------------------------------------------------------------
+
+
+# num = int (input("Enter a number : "))
+# count = 0
+# i=1
+# while(i<=num):
+#     if(num%i ==0):
+#           count+= 1
+#     i+= 1      
+
+# if(count==2):
+#      print("prime")
+
+# else:
+#      print("not a prime")  
 
 
 
-    
-
-           
-
-
-
-
-
-
+#-----------------------------------------------------------------------------------------------------------
 
 
