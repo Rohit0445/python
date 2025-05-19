@@ -184,4 +184,60 @@
 
 #-----------------------------------------------------------------------------------------------------------
 
+#kth largest number
+ 
+# li = [10,20,56,35,94,85,74,63,12]
 
+# num = int (input("Enter which largest number you want : "))
+
+# li.sort()
+# print(li)
+# print(num,"rd largest number is ", li[-(num)])
+
+#---------------------------------------------------------------------------------------------------------
+
+#second largest number 
+
+# li1 = [10,20,56,35,94,85,74,63,12]
+
+# li1.sort()
+
+# print("second largest number is ", li1[-2])
+
+#---------------------------------------------------------------------------------------------------------
+
+#perfect number
+
+# num = int(input ("Enter a number :  "))
+# x=0  
+# for i in range(1,num):
+#     if(num%i==0):
+#         x += i 
+
+# if(num==x):
+#     print(f"{num } is a  perfect number")
+
+# else:
+#    print (f"{num } not a perfect number")
+
+#----------------------------------------------------------------------------------------------------------
+
+#fibonacci
+
+num = int(input("Enter a number : "))
+
+first = 0
+second = 1
+
+for i in range (num):
+    if (i==0):
+        print(first,end= " ")
+        continue
+    if (i==1):
+        print(second,end= " ")
+        continue
+
+    next = first+second
+    first = second
+    second = next
+    print(next,end=" ")
