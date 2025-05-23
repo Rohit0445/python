@@ -224,20 +224,30 @@
 
 #fibonacci
 
-num = int(input("Enter a number : "))
+# num = int(input("Enter a number : "))
 
-first = 0
-second = 1
+# first = 0
+# second = 1
 
-for i in range (num):
-    if (i==0):
-        print(first,end= " ")
-        continue
-    if (i==1):
-        print(second,end= " ")
-        continue
+# for i in range (num):
+#     if (i==0):
+#         print(first,end= " ")
+#         continue
+#     if (i==1):
+#         print(second,end= " ")
+#         continue
 
-    next = first+second
-    first = second
-    second = next
-    print(next,end=" ")
+#     next = first+second
+#     first = second
+#     second = next
+#     print(next,end=" ")
+
+
+#----------------------------------------------------------------------------------------------------------------
+#missing element in list  
+
+# li = [1,2,4,6]
+# for i in range(1,len(li)):
+#     if(li[i]-li[i-1]>1):
+#       print(li[i]-1)
+   
