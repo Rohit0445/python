@@ -191,19 +191,52 @@
 #-----------------------------------------------------------------------------------------
 #keyword variable length
 
-def view_data(**kvarg):
-    print(kvarg)
+# def view_data(**kvarg):
+#     print(kvarg)
 
-dic = {
-    "name" : "rohit",
-    "rollno":102,    
-    "name1" : "sourav",
-    "rollno1":103,   
-    "name2" : "ajay",
-    "rollno2":104,   
-    }
+# dic = {
+#     "name" : "rohit",
+#     "rollno":102,    
+#     "name1" : "sourav",
+#     "rollno1":103,   
+#     "name2" : "ajay",
+#     "rollno2":104,   
+#     }
 
-view_data(**dic)
+# view_data(**dic)
 
 
-view_data(rollno = 201,rollno1 = 202,rollno3 = 203)
+# view_data(rollno = 201,rollno1 = 202,rollno3 = 203)
+
+
+# LAMBDA FUNCTION (anonymus function) 
+# usses for sinlge line state ment or short code  
+# and it is faster than normal functon  
+
+# greater = lambda x,y : x if (x>y) else y 
+# print(greater(5,8))
+
+#------------------------------------------------------------------------------------------------------------------------------------
+# HIGH ORDER FUNCTIONS
+
+li = [1,2,3,4,5]
+
+ans = list(map(lambda x:x*x, li))
+
+print(ans)
+
+
+li2 = [1,2,3,4,5]
+
+ans2 = list(map(lambda x:x+10, li))
+
+print(ans2)
+
+
+li3 = [121,213,212,161]
+
+ans3 = list(map(lambda x:str(x)==str(x)[::-1],li3))
+
+print(ans3)
+    '
+
