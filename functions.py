@@ -219,24 +219,80 @@
 #------------------------------------------------------------------------------------------------------------------------------------
 # HIGH ORDER FUNCTIONS
 
-li = [1,2,3,4,5]
+# map------
 
-ans = list(map(lambda x:x*x, li))
+# li = [1,2,3,4,5]
 
+# ans = list(map(lambda x:x*x, li))
+
+# print(ans)
+
+
+# li2 = [1,2,3,4,5]
+
+# ans2 = list(map(lambda x:x+10, li))
+
+# print(ans2)
+
+
+# li3 = [121,213,212,161]
+
+# ans3 = list(map(lambda x:str(x)==str(x)[::-1],li3))
+
+# print(ans3)
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------
+# filter----gives only true values 
+
+# li = [50,51,60,112,14,56,81]
+
+# ans = list(filter(lambda x:x>50,li))
+# print(ans)
+
+
+
+# li = [2,-3,5,-6,4,-8,-6,] 
+
+# ans = list(filter(lambda x:x>0,li))
+
+# print(ans)
+
+
+
+# li = [121,323,565,659,457,851]
+
+# ans = list(filter(lambda x:str(x)==str(x)[::-1],li))
+
+# print(ans)
+
+# li = ["","Rohit","  ","     meena    "]
+
+# ans = list(filter(lambda x:x.strip()!="",li))
+# print(ans)
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# REDUCE--------
+
+from functools import reduce
+
+li = [1,3,5,201,68,3,53,4]
+
+ans = reduce(lambda x,y:x if x>y else y,li)
 print(ans)
 
+li = [1,3,5,201,68,3,53,4]
 
-li2 = [1,2,3,4,5]
+ans1 = reduce(lambda x,y:x if x<y else y,li)
+print(ans1)
 
-ans2 = list(map(lambda x:x+10, li))
+
+li1 = ["Rohit","Meena","suryansh","ujjawal"]
+
+ans2 = reduce(lambda x,y: x if len(str(x))>len(str(y)) else y,li1)
 
 print(ans2)
 
-
-li3 = [121,213,212,161]
-
-ans3 = list(map(lambda x:str(x)==str(x)[::-1],li3))
-
-print(ans3)
-    '
-
+li2 = [1,2,3,4,5]
+ans3 = reduce(lambda x,y: x+y,li2)
+print(ans3) 
