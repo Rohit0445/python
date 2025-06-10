@@ -75,25 +75,32 @@ class sbi:
         amount= 20000
         print(f"balance{amount}")
 
-    
+   
 pin=1234
-your_pin=int(input("Enter your pin : "))
 
-if(pin==your_pin):
-    operation=input("choose an option from withdraw , deposit, check balance : ")
-    s1= sbi()
-    if(operation=="withdraw"):
+for i in range(3):
+    your_pin=int(input("Enter your pin : "))
+    if(pin==your_pin):
+      
+      operation=input("choose an option from withdraw , deposit, check balance : ")
+      s1= sbi()
+      if(operation=="withdraw"):
         s1.withdrawl()
 
-    elif(operation=="deposit"):
+      elif(operation=="deposit"):
         s1.deposit()
 
-    elif(operation=="check balance"):
+      elif(operation=="check balance"):
         s1.balance()
+      break
 
-else:
-    print("incorrect pin")
+    else:
+      print("incorrect pin")
         
+
+
+
+
 
 
 
