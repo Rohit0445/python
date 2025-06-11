@@ -54,48 +54,65 @@
 
 # --------------------------------------------------------inharitence-----------------------------------------------------------------------
 
-class sbi:
+# class sbi:
 
-    def withdrawl(self):
-        amount=20000
-        withdraw=int(input("Enter withdrwal amount : "))
-        if(withdraw<=amount):
-           print(f"withdwarl succesfull {withdraw}remaining amount {amount-withdraw}")
+#     def withdrawl(self):
+#         amount=20000
+#         withdraw=int(input("Enter withdrwal amount : "))
+#         if(withdraw<=amount):
+#            print(f"withdwarl succesfull {withdraw}remaining amount {amount-withdraw}")
 
-        else:
-            print("not sufficient amount")
+#         else:
+#             print("not sufficient amount")
 
     
-    def deposit(self):
-        amount=20000
-        deposit = int(input("Enter deposit amount : "))
-        print(f"deposit succesfull total amount{amount+deposit}")
+#     def deposit(self):
+#         amount=20000
+#         deposit = int(input("Enter deposit amount : "))
+#         print(f"deposit succesfull total amount{amount+deposit}")
 
-    def balance(self):
-        amount= 20000
-        print(f"balance{amount}")
+#     def balance(self):
+#         amount= 20000
+#         print(f"balance{amount}")
 
    
-pin=1234
+# pin=1234
 
-for i in range(3):
-    your_pin=int(input("Enter your pin : "))
-    if(pin==your_pin):
+# for i in range(3):
+#     your_pin=int(input("Enter your pin : "))
+#     if(pin==your_pin):
       
-      operation=input("choose an option from withdraw , deposit, check balance : ")
-      s1= sbi()
-      if(operation=="withdraw"):
-        s1.withdrawl()
+#       operation=input("choose an option from withdraw , deposit, check balance : ")
+#       s1= sbi()
+#       if(operation=="withdraw"):
+#         s1.withdrawl()
 
-      elif(operation=="deposit"):
-        s1.deposit()
+#       elif(operation=="deposit"):
+#         s1.deposit()
 
-      elif(operation=="check balance"):
-        s1.balance()
-      break
+#       elif(operation=="check balance"):
+#         s1.balance()
+#       break
 
-    else:
-      print("incorrect pin")
+#     else:
+#       print("incorrect pin")
+
+# ---------------------------------------------------POLYMORPHYSM-------------------------------------------------------------------------
+
+#operator over loading----------
+
+class myclass:
+    def __init__(self,a): 
+        self.x=a
+
+    def __add__(self,other):
+        print(self.x+other.x)
+
+
+a=myclass(5)
+b=myclass(4)
+c=a+b
+print(c)
         
 
 
