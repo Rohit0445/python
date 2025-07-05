@@ -124,7 +124,10 @@
 #---------------------------------------------------------------------------------------------------------------------------
  # 11.	Write a  program to input week number and print week day.
 
-# number = int(input("Enter week number (1-7): "))
+number = int(input("Enter week number (1-7): "))
+days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+print(days[number-1])
 
 # if (number == 1):
 #     print("Monday")
@@ -142,6 +145,9 @@
 #     print("Sunday")
 # else:
 #     print("Invalid week number! Please enter a number between 1 and 7.")
+
+
+
 #---------------------------------------------------------------------------------------------------------- 
 # 12.	Write a  program to input month number and print number of days in that month.
 
@@ -291,19 +297,19 @@
 # For unit above 250 Rs. 1.50/unit
 # An additional surcharge of 20% is added to the bill 
 
-units = int(input("Enter electricity units consumed: "))
+# units = int(input("Enter electricity units consumed: "))
 
-if units <= 50:
-    bill = units * 0.50
-elif units <= 150:
-    bill = 50 * 0.50 + (units - 50) * 0.75
-elif units <= 250:
-    bill = 50 * 0.50 + 100 * 0.75 + (units - 150) * 1.20
-else:
-    bill = 50 * 0.50 + 100 * 0.75 + 100 * 1.20 + (units - 250) * 1.50
+# if units <= 50:
+#     bill = units * 0.50
+# elif units <= 150:
+#     bill = 50 * 0.50 + (units - 50) * 0.75
+# elif units <= 250:
+#     bill = 50 * 0.50 + 100 * 0.75 + (units - 150) * 1.20
+# else:
+#     bill = 50 * 0.50 + 100 * 0.75 + 100 * 1.20 + (units - 250) * 1.50
 
-surcharge = bill * 20/100
-total_bill = bill + surcharge
+# surcharge = bill * 20/100
+# total_bill = bill + surcharge
 
-print(f"Total Electricity Bill: Rs. {total_bill}")
+# print(f"Total Electricity Bill: Rs. {total_bill}")
 
