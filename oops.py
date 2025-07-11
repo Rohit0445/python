@@ -101,18 +101,18 @@
 
 #operator over loading----------
 
-class myclass:
-    def __init__(self,a): 
-        self.x=a
+# class myclass:
+#     def __init__(self,a): 
+#         self.x=a
 
-    def __add__(self,other):
-        print(self.x+other.x)
+#     def __add__(self,other):
+#         print(self.x+other.x)
 
 
-a=myclass(5)
-b=myclass(4)
-c=a+b
-print(c)
+# a=myclass(5)
+# b=myclass(4)
+# c=a+b
+# print(c)
         
 
 
