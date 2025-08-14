@@ -144,26 +144,107 @@
 
 #---------------------------------------   METHODS   ----------------------------------------------
 
-class Student:
-    school = "SAKET SHISHU RRANJAN HIGHER SECONDARY SCHOOL VIDISHA"
-    greade = "12th"
+#____________________________-class method--------------------------
 
-    def __init__(self,name):
-        self.n=name
 
-    @classmethod 
-    def update(cls,x,y):   #update class Variable or create new variable
-        cls.greade=x
-        cls.principle=y
+# class Student:
+#     school = "SAKET SHISHU RRANJAN HIGHER SECONDARY SCHOOL VIDISHA"
+#     greade = "12th"
 
-obj = Student('Rohit')
-print(obj.greade)
+#     def __init__(self,name):
+#         self.n=name
 
-obj.update('10th','RAGINI PANDEY') #update class Variable or create new variable
-print(obj.greade)
-print(obj.principle)
+#     @classmethod 
+#     def update(cls,x,y):   #update class Variable or create new variable
+#         cls.greade=x
+#         cls.principle=y
 
-print(obj.school)
-print(obj.n)
+# obj = Student('Rohit')
+# print(obj.greade)
 
- 
+# obj.update('10th','RAGINI PANDEY') #update class Variable or create new variable
+# print(obj.greade)
+# print(obj.principle)
+
+# print(obj.school)
+# print(obj.n)
+
+#-------------------------------   STATIC METHOD  -----------------------------
+
+
+# class Student:
+    
+
+#     def __init__(self,name):
+#         self.n=name
+
+#     @staticmethod
+
+#     def hello():
+#         print('Hello')
+
+# obj = Student('Rohit')
+# obj.hello()
+
+
+
+# ABSTRACTION ===============================================================
+
+# to hide background functionality and only show the relevent data 
+# 
+# First Import ABC form abc 
+# from abc import ABC , abstractmethod
+
+# class  Senior(ABC):
+#     def add(self,x,y):
+#         print(x+y)
+
+#     def sub(self,x,y):
+#         print(x-y)
+
+#     @abstractmethod
+
+#     def divission(self):
+#         pass   
+
+# class junior(Senior):
+#     def divission(self,x,y):
+#         print(x//y) 
+    
+
+# obj = junior()   
+
+# obj.sub(5,5)
+# obj.divission(5,5)
+
+
+
+
+from abc import ABC , abstractmethod
+
+class  flipkart(ABC):
+    def login(self,username,password):
+        print("Welcome to Deshboard")
+
+    @abstractmethod
+
+    def registration(self):
+        pass   
+
+class laptop(flipkart):
+    def registration(self,name,password):
+      self.name=name
+      self.password = password
+
+
+class mobile(flipkart):
+    def register (self,name,password):
+      self.name=name
+      self.password = password
+
+    
+obj1 = laptop() 
+obj1.login("Rohit","Rohit")  
+
+obj2 = mobile()   
+obj2.login("Rohit","Rohit")
