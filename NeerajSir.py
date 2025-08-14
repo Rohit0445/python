@@ -1,6 +1,8 @@
 n=input("Enter Your NAme")
 if((n.replace(' ','')).isalpha()) and (len(n) >=3 and len(n) < 21):
+    p = n.replace(' ','')
     print(n)
+    print(p)
 
 else:
     print("not Alpha")
