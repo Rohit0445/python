@@ -37,12 +37,36 @@
 # print(f'{x} is present  at the index of {count} in a list')
 
 
-li = [1, 2, 3, 4, 5]
-i = 0
-j = len(li) - 1
+# li = [1, 2, 3, 4, 5]
+# i = 0
+# j = len(li) - 1
 
-while i < j:
-    li[i] ,li[j] = li[j], li[i]
-    i += 1
-    j -= 1
-print(li)
+# while i < j:
+#     li[i] ,li[j] = li[j], li[i]
+#     i += 1
+#     j -= 1
+# print(li)
+
+# name = "Rohit Meena"
+
+# temp= ""
+
+# for i in name:
+#     temp=i+temp
+
+# print(temp)
+
+name = "Rohit Meena"
+
+temp =""
+result =""
+
+for i in name:
+    if i !=" ":
+        temp=i+temp
+    
+    else:
+        result = result+temp+" "
+        temp=""
+result=result+temp
+print(result)
